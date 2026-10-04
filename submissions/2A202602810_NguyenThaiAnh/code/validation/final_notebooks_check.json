@@ -1,0 +1,69 @@
+{
+  "notebooks": [
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/final_10_convnext_tiny.ipynb",
+      "code_cells": 10,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "910bc8d874864b927e75239607f100d1c5279b865d2df8e04c6855bf9a20150a"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_F01_convnext_seed1.ipynb",
+      "code_cells": 4,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "762af20f410d33538cec81ce3c95dd9e5a838398412d1c7d65e9e8d44d4fc236"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_F01_convnext_seed2.ipynb",
+      "code_cells": 4,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "404fe86fc009eb3c300c63f3c4ec8f0519cde5fbbca395b8cf997fd9fa0324ef"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T00_convnext_seed1.ipynb",
+      "code_cells": 4,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "02e567304374ffdf4c7e3e1645d6b6e8f2b555319e2e2e83772b099174fff505"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T00_convnext_seed2.ipynb",
+      "code_cells": 4,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "7be4c0e67504877c2ccc98220abf979b94f032a3561e5a00a3484b620eef9ed5"
+    }
+  ],
+  "source_checkpoints_unchanged": true,
+  "source_sha256": {
+    "runs/B03/seed0/config.json": "5642236ddb3566700e06a0d42e97c47229c88cb5bdf02f00a6e3ecacb34a5d61",
+    "runs/B03/seed0/summary.json": "a66fe3ff15b9e1f7a300575169d0960bb3298f797bcdd4d2eb1a073e106a8d19",
+    "runs/B03/seed0/best.pt": "bba6dd6b58933859c899f047361c0ff6730a911979ef6b45fc04db09b243ea0d",
+    "runs/B03/seed0/last.pt": "9429f9ba5de96dbc682d6c33238c692a61ddc2005c3614dc8f9a294c0e131c8e",
+    "runs/T04/seed0/config.json": "2f7e59d69f47e814eaf03bcfa7569b3a653ebbc0c187f5042effdb30d4550801",
+    "runs/T04/seed0/summary.json": "b27f1a1bed89993cdd05ff219d17e4ba476b4991a2110080e14f3c47c7f36987",
+    "runs/T04/seed0/best.pt": "ae3ceb8156dcb66a573518e62658449df8aa9f5224e643a60afdc2ee758be75a",
+    "runs/T04/seed0/last.pt": "a26917adc42bc93b0c095730ec63dd0957301b92cd136c3c15776c7cb135c58b"
+  },
+  "configuration_locked": true,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "seed0_validation_prepared": true,
+  "new_training_started": false,
+  "test_evaluated": false,
+  "submission_tests_passed": 37,
+  "new_final_protocol_tests": 3,
+  "original_evaluator_used_in_synthetic_test": true,
+  "real_subprocess_readonly_passed": true,
+  "gpu_validation_smoke_passed": true
+}

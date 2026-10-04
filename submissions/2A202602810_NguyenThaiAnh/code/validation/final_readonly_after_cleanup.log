@@ -1,0 +1,7 @@
+role  seed source_id  seed0_reuse training_status        status  temperature  val_macro_f1  val_top1  val_ece  test_top1  test_macro_f1  test_balanced_acc  test_ece  test_nll
+ T00     0       B03         True        complete test_complete     1.000000      0.966701  0.974293 0.015793   0.977759       0.970993           0.973638  0.012674  0.091006
+ T00     1       T00        False        complete test_complete     1.000000      0.968169  0.974864 0.015714   0.976618       0.970746           0.972181  0.014094  0.087253
+ T00     2       T00        False        complete test_complete     1.000000      0.971625  0.978292 0.013702   0.978044       0.972294           0.976837  0.012591  0.077504
+ F01     0       T04         True        complete test_complete     0.969719      0.975457  0.981720 0.005177   0.983462       0.978973           0.983118  0.006751  0.059617
+ F01     1       F01        False        complete test_complete     0.958715      0.973995  0.980577 0.005573   0.981180       0.976862           0.979745  0.004495  0.065267
+ F01     2       F01        False        complete test_complete     0.987399      0.974570  0.980291 0.003448   0.981180       0.977274           0.983567  0.004770  0.061341

@@ -1,0 +1,8 @@
+phase,runs,minutes
+5 backbone,5.0,41.69458067140003
+Ablation T00–T08,9.0,94.69463910120102
+Final,3.0,31.56487970040034
+Baseline chung kết,3.0,31.56487970040034
+Suy luận / benchmark / export (dành chỗ),,30.0
+Download / setup (dành chỗ),,10.0
+Dự phòng 30%,,71.85569375202051

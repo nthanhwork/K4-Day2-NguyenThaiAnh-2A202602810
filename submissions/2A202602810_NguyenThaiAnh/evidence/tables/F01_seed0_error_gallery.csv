@@ -1,0 +1,13 @@
+Filename,y_true,y_pred,confidence,true_class,predicted_class
+20170207-153455-0.jpg,0,7,0.97027129,Chinee apple,Snake weed
+20170707-111904-0.jpg,0,7,0.93119248,Chinee apple,Snake weed
+20170705-162506-0.jpg,7,0,0.83639126,Snake weed,Chinee apple
+20180109-094515-2.jpg,7,0,0.49175339,Snake weed,Chinee apple
+20170630-155129-0.jpg,7,8,0.98418739,Snake weed,Negative
+20170705-162907-0.jpg,0,7,0.90560893,Chinee apple,Snake weed
+20170718-131902-2.jpg,7,3,0.89000923,Snake weed,Parthenium
+20170718-101313-2.jpg,0,7,0.8617632,Chinee apple,Snake weed
+20170521-153419-0.jpg,1,7,0.99464325,Lantana,Snake weed
+20171113-101506-1.jpg,5,8,0.99448468,Rubber vine,Negative
+20171102-100322-1.jpg,8,4,0.98470888,Negative,Prickly acacia
+20170729-091822-2.jpg,8,4,0.98469841,Negative,Prickly acacia

@@ -1,0 +1,46 @@
+{
+  "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/inference_T04_convnext_tiny.ipynb",
+  "schema_valid": true,
+  "code_cells": 8,
+  "syntax_valid": true,
+  "readonly_execution_passed": true,
+  "source_checkpoints_unchanged": true,
+  "source_sha256": {
+    "runs/T04/seed0/best.pt": "ae3ceb8156dcb66a573518e62658449df8aa9f5224e643a60afdc2ee758be75a",
+    "runs/T04/seed0/last.pt": "a26917adc42bc93b0c095730ec63dd0957301b92cd136c3c15776c7cb135c58b",
+    "runs/T04/seed0/config.json": "2f7e59d69f47e814eaf03bcfa7569b3a653ebbc0c187f5042effdb30d4550801",
+    "runs/T04/seed0/summary.json": "b27f1a1bed89993cdd05ff219d17e4ba476b4991a2110080e14f3c47c7f36987"
+  },
+  "real_gpu_run_completed": true,
+  "validation_n": 3501,
+  "methods": [
+    "I00",
+    "I01",
+    "I02",
+    "I07",
+    "I08"
+  ],
+  "warmup": 10,
+  "latency_iterations": 100,
+  "latency_batches": [
+    1,
+    32
+  ],
+  "submission_tests_passed": 34,
+  "new_inference_tests": 7,
+  "test_evaluated": false,
+  "selection": {
+    "section9_complete": true,
+    "selection_split": "val",
+    "source_id": "T04",
+    "seed": 0,
+    "final_configuration_locked": false,
+    "test_evaluated": false,
+    "single_seed_only": true,
+    "latency_budget_p95_ms": 100,
+    "quality_candidate": "I07",
+    "realtime_candidate": "I07",
+    "tie_breaking": "macro-F1 descending, NLL ascending, p95 ascending, method ID"
+  },
+  "notebook_sha256": "a897aaac027282f48558ba11eaf2be5bba9be0777b608c091de0c1ee828749a2"
+}

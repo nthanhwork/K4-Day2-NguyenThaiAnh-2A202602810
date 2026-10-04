@@ -1,0 +1,23 @@
+{
+  "exp_id": "B01",
+  "backbone": "resnet50",
+  "pretrained_tag": "a1_in1k",
+  "seed": 0,
+  "epochs": 12,
+  "batch_size": 64,
+  "img_size": 224,
+  "best_epoch": 10,
+  "val_macro_f1": 0.836147358331229,
+  "val_top1": 0.8783204798628963,
+  "val_ece": 0.017552058489381867,
+  "params_m": 23.526473,
+  "gmacs": 4.109483008,
+  "train_seconds_per_epoch_observed": 51.22407689816661,
+  "timing_scope": "user scheduling; may share GPU with another training job",
+  "parallel_group_planned": 3,
+  "total_skipped_updates": 2,
+  "completed_epochs": 12,
+  "test_evaluated": false,
+  "run_path": "runs/B01/seed0",
+  "outputs_verified": true
+}

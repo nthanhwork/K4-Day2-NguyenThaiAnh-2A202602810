@@ -1,0 +1,7 @@
+Workspace: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810 | REPRODUCE: False
+Dependency installation skipped in local CPU verification; all requirements are present
+  exp_id  ...              curve
+3    T00  ...  see per-seed rows
+7    F01  ...  see per-seed rows
+
+[2 rows x 23 columns]

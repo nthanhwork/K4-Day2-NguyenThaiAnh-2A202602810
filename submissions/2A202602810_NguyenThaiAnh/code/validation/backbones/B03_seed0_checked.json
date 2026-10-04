@@ -1,0 +1,23 @@
+{
+  "exp_id": "B03",
+  "backbone": "convnext_tiny",
+  "pretrained_tag": "in12k_ft_in1k",
+  "seed": 0,
+  "epochs": 12,
+  "batch_size": 64,
+  "img_size": 224,
+  "best_epoch": 10,
+  "val_macro_f1": 0.9667012831519156,
+  "val_top1": 0.974293059125964,
+  "val_ece": 0.015793125336935006,
+  "params_m": 27.827049,
+  "gmacs": 4.469676288,
+  "train_seconds_per_epoch_observed": 63.647807394333405,
+  "timing_scope": "user scheduling; may share GPU with another training job",
+  "parallel_group_planned": 1,
+  "total_skipped_updates": 6,
+  "completed_epochs": 12,
+  "test_evaluated": false,
+  "run_path": "runs/B03/seed0",
+  "outputs_verified": true
+}

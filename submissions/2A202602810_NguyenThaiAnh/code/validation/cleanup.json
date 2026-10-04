@@ -1,0 +1,22 @@
+{
+  "temp_removed_from_workspace": true,
+  "temp_files": 29,
+  "temp_bytes": 6174009,
+  "backup_location": "/tmp/deepweeds-cleanup-20261004-k5o1tba3",
+  "removed_caches": [
+    "submissions/2A202602810_NguyenThaiAnh/code/__pycache__",
+    "submissions/2A202602810_NguyenThaiAnh/code/tests/__pycache__",
+    "tests/__pycache__",
+    "starter/__pycache__",
+    "__pycache__"
+  ],
+  "preserved": [
+    "data/",
+    "runs/",
+    ".venv/",
+    ".cache/",
+    "all saved predictions",
+    "all frozen source code"
+  ],
+  "notebook_embedded_outputs_removed": true
+}

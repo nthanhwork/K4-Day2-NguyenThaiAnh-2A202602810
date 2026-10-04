@@ -1,0 +1,2 @@
+exp_id,backbone,pretrained_tag,seed,epochs,batch_size,img_size,best_epoch,val_macro_f1,val_top1,val_ece,params_m,gmacs,train_seconds_per_epoch_observed,timing_scope,parallel_group_planned,total_skipped_updates,completed_epochs,test_evaluated,run_path,outputs_verified
+B04,deit_small_patch16_224,fb_in1k,0,12,64,224,12,0.9554963580715707,0.9674378748928878,0.011609109801178248,21.669129,4.60795776,50.230465178833335,user scheduling; may share GPU with another training job,1,2,12,False,runs/B04/seed0,True

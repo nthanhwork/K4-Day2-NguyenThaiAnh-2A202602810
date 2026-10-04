@@ -1,0 +1,43 @@
+test_all_augmentations_and_deterministic_eval (test_implementation.TestData.test_all_augmentations_and_deterministic_eval) ... ok
+test_eval_order_and_seeded_train_sampler (test_implementation.TestData.test_eval_order_and_seeded_train_sampler) ... ok
+test_original_two_column_headers_enriched_without_rewriting (test_implementation.TestData.test_original_two_column_headers_enriched_without_rewriting) ... ok
+test_overlap_missing_and_wrong_label_rejected (test_implementation.TestData.test_overlap_missing_and_wrong_label_rejected) ... ok
+test_cutmix_clipped_area_and_labels (test_implementation.TestLosses.test_cutmix_clipped_area_and_labels) ... ok
+test_extreme_logits_and_alpha_buffer (test_implementation.TestLosses.test_extreme_logits_and_alpha_buffer) ... ok
+test_focal_zero_and_smoothing_zero_equal_ce (test_implementation.TestLosses.test_focal_zero_and_smoothing_zero_equal_ce) ... ok
+test_invalid_loss_inputs (test_implementation.TestLosses.test_invalid_loss_inputs) ... ok
+test_mixup_and_mixed_loss_match_soft_targets (test_implementation.TestLosses.test_mixup_and_mixed_loss_match_soft_targets) ... ok
+test_weights_are_normalized_and_effective_number_is_stable (test_implementation.TestLosses.test_weights_are_normalized_and_effective_number_is_stable) ... ok
+test_interrupted_resume_matches_uninterrupted_weights (test_implementation.TestRunContract.test_interrupted_resume_matches_uninterrupted_weights) ... /home/sakana/.local/lib/python3.14/site-packages/torch/jit/_script.py:1474: DeprecationWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+interrupted seed=0 epoch=1/3 train_loss=2.2997 val_macro_f1=0.0444
+interrupted seed=0 epoch=2/3 train_loss=2.3588 val_macro_f1=0.0556
+interrupted seed=0 epoch=3/3 train_loss=2.3467 val_macro_f1=0.0370
+uninterrupted seed=0 epoch=1/3 train_loss=2.2997 val_macro_f1=0.0444
+uninterrupted seed=0 epoch=2/3 train_loss=2.3588 val_macro_f1=0.0556
+uninterrupted seed=0 epoch=3/3 train_loss=2.3467 val_macro_f1=0.0370
+ok
+test_one_epoch_pilot_keeps_scheduler_and_resumes_exactly (test_implementation.TestRunContract.test_one_epoch_pilot_keeps_scheduler_and_resumes_exactly) ... pilot seed=0 epoch=1/3 train_loss=2.2664 val_macro_f1=0.0444
+pilot seed=0 epoch=2/3 train_loss=2.2876 val_macro_f1=0.0370
+pilot seed=0 epoch=3/3 train_loss=2.3199 val_macro_f1=0.0370
+full seed=0 epoch=1/3 train_loss=2.2664 val_macro_f1=0.0444
+full seed=0 epoch=2/3 train_loss=2.2876 val_macro_f1=0.0370
+full seed=0 epoch=3/3 train_loss=2.3199 val_macro_f1=0.0370
+ok
+test_pilot_rejects_test_export_and_invalid_epoch (test_implementation.TestRunContract.test_pilot_rejects_test_export_and_invalid_epoch) ... ok
+test_run_outputs_and_resume_without_touching_test (test_implementation.TestRunContract.test_run_outputs_and_resume_without_touching_test) ... fixture seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0444
+fixture seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+ok
+test_test_export_requires_opt_in_and_cannot_be_repeated (test_implementation.TestRunContract.test_test_export_requires_opt_in_and_cannot_be_repeated) ... test_fixture_only seed=0 epoch=1/1 train_loss=2.2895 val_macro_f1=0.0556
+ok
+test_cli_types_and_invalid_config (test_implementation.TestTraining.test_cli_types_and_invalid_config) ... ok
+test_ema_parameters_and_buffers (test_implementation.TestTraining.test_ema_parameters_and_buffers) ... ok
+test_evaluate_order_no_grad_no_buffer_updates (test_implementation.TestTraining.test_evaluate_order_no_grad_no_buffer_updates) ... ok
+test_frozen_backbone_stays_eval_and_unchanged (test_implementation.TestTraining.test_frozen_backbone_stays_eval_and_unchanged) ... ok
+test_groups_cover_trainable_params_and_exempt_bias_norm (test_implementation.TestTraining.test_groups_cover_trainable_params_and_exempt_bias_norm) ... ok
+test_scheduler_warmup_cosine_and_skip_ema_on_overflow (test_implementation.TestTraining.test_scheduler_warmup_cosine_and_skip_ema_on_overflow) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 2.894s
+
+OK

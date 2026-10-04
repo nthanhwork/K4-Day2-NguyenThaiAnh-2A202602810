@@ -1,0 +1,156 @@
+test_controlled_plan_and_independent_combination_factors (test_ablation_notebook.TestAblationNotebooks.test_controlled_plan_and_independent_combination_factors) ... ok
+test_full_matrix_resume_audit_selection_lock_and_collection (test_ablation_notebook.TestAblationNotebooks.test_full_matrix_resume_audit_selection_lock_and_collection) ... /home/sakana/.local/lib/python3.14/site-packages/torch/jit/_script.py:1474: DeprecationWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+B03 seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0556
+B03 seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+T04 seed=0 epoch=1/2 train_loss=2.2659 val_macro_f1=0.0556
+Running T01: scratch initialization
+T01: new, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T01 seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0556
+T01 seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+Running T02: frozen pretrained backbone
+T02: new, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T02 seed=0 epoch=1/2 train_loss=2.2686 val_macro_f1=0.0000
+T02 seed=0 epoch=2/2 train_loss=2.2646 val_macro_f1=0.0000
+Running T03: color augmentation
+T03: new, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T03 seed=0 epoch=1/2 train_loss=2.2914 val_macro_f1=0.0444
+T03 seed=0 epoch=2/2 train_loss=2.2514 val_macro_f1=0.0370
+Running T04: CutMix alpha=1.0
+T04: resume, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T04 seed=0 epoch=2/2 train_loss=2.2873 val_macro_f1=0.0444
+Running T05: label smoothing=0.1
+T05: new, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T05 seed=0 epoch=1/2 train_loss=2.2926 val_macro_f1=0.0556
+T05 seed=0 epoch=2/2 train_loss=2.2746 val_macro_f1=0.0444
+Running T06: focal loss gamma=2.0
+T06: new, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T06 seed=0 epoch=1/2 train_loss=1.8489 val_macro_f1=0.0556
+T06 seed=0 epoch=2/2 train_loss=1.8250 val_macro_f1=0.0444
+Running T07: weighted CE from train counts
+T07: new, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T07 seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0556
+T07 seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+T08: new, convnext_tiny, seed=0, epochs=2, batch=9, planned group=4, pid=2
+T08 seed=0 epoch=1/2 train_loss=2.2659 val_macro_f1=0.0556
+T08 seed=0 epoch=2/2 train_loss=2.2873 val_macro_f1=0.0444
+Running T01: scratch initialization
+T01: read completed 2-epoch run; no retraining
+ok
+test_proposal_uses_two_factors_and_labels_exploration (test_ablation_notebook.TestAblationNotebooks.test_proposal_uses_two_factors_and_labels_exploration) ... ok
+test_all_models_share_t00_and_two_two_one_groups (test_backbone_notebook.TestBackboneNotebooks.test_all_models_share_t00_and_two_two_one_groups) ... ok
+test_lock_rejects_duplicate_job_and_test_is_disabled (test_backbone_notebook.TestBackboneNotebooks.test_lock_rejects_duplicate_job_and_test_is_disabled) ... ok
+test_resume_completed_reuse_and_output_audit (test_backbone_notebook.TestBackboneNotebooks.test_resume_completed_reuse_and_output_audit) ... notebook_fixture seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0556
+notebook_fixture: resume, resnet50, seed=0, epochs=2, batch=9, planned group=1, pid=2
+notebook_fixture seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+notebook_fixture: read completed 2-epoch run; no retraining
+Log: /tmp/tmp9q9s0qhq/runs/notebook_logs/notebook_fixture_seed0_1791110442167557037.log
+notebook_fixture: read completed 2-epoch run; no retraining
+ok
+test_failed_test_forward_leaves_marker_and_cannot_retry_test (test_final_notebook.TestFinalProtocol.test_failed_test_forward_leaves_marker_and_cannot_retry_test) ... B03 seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0556
+B03 seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+T04 seed=0 epoch=1/2 train_loss=2.2659 val_macro_f1=0.0556
+T04 seed=0 epoch=2/2 train_loss=2.2873 val_macro_f1=0.0444
+T00/seed0: reuse B03/seed0
+T00: new, convnext_tiny, seed=1, epochs=2, batch=9, planned group=10, pid=2
+T00 seed=1 epoch=1/2 train_loss=2.3581 val_macro_f1=0.0317
+T00 seed=1 epoch=2/2 train_loss=2.3666 val_macro_f1=0.0317
+T00: new, convnext_tiny, seed=2, epochs=2, batch=9, planned group=10, pid=2
+T00 seed=2 epoch=1/2 train_loss=2.1931 val_macro_f1=0.0444
+T00 seed=2 epoch=2/2 train_loss=2.2011 val_macro_f1=0.0556
+F01/seed0: reuse T04/seed0
+F01: new, convnext_tiny, seed=1, epochs=2, batch=9, planned group=10, pid=2
+F01 seed=1 epoch=1/2 train_loss=2.3044 val_macro_f1=0.0317
+F01 seed=1 epoch=2/2 train_loss=2.3438 val_macro_f1=0.0317
+F01: new, convnext_tiny, seed=2, epochs=2, batch=9, planned group=10, pid=2
+F01 seed=2 epoch=1/2 train_loss=2.1925 val_macro_f1=0.0444
+F01 seed=2 epoch=2/2 train_loss=2.1908 val_macro_f1=0.0556
+F01/seed0: one locked test forward on 9 images
+ok
+test_sealed_recipes_alias_seed0_and_independent_training_predictions (test_final_notebook.TestFinalProtocol.test_sealed_recipes_alias_seed0_and_independent_training_predictions) ... B03 seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0556
+B03 seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+T04 seed=0 epoch=1/2 train_loss=2.2659 val_macro_f1=0.0556
+T04 seed=0 epoch=2/2 train_loss=2.2873 val_macro_f1=0.0444
+T00/seed0: reuse B03/seed0
+F01/seed0: reuse T04/seed0
+ok
+test_six_checkpoints_one_test_forward_cached_reexport_and_official_evaluator (test_final_notebook.TestFinalProtocol.test_six_checkpoints_one_test_forward_cached_reexport_and_official_evaluator) ... B03 seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0556
+B03 seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+T04 seed=0 epoch=1/2 train_loss=2.2659 val_macro_f1=0.0556
+T04 seed=0 epoch=2/2 train_loss=2.2873 val_macro_f1=0.0444
+T00/seed0: reuse B03/seed0
+T00: new, convnext_tiny, seed=1, epochs=2, batch=9, planned group=10, pid=2
+T00 seed=1 epoch=1/2 train_loss=2.3581 val_macro_f1=0.0317
+T00 seed=1 epoch=2/2 train_loss=2.3666 val_macro_f1=0.0317
+T00: new, convnext_tiny, seed=2, epochs=2, batch=9, planned group=10, pid=2
+T00 seed=2 epoch=1/2 train_loss=2.1931 val_macro_f1=0.0444
+T00 seed=2 epoch=2/2 train_loss=2.2011 val_macro_f1=0.0556
+F01/seed0: reuse T04/seed0
+F01: new, convnext_tiny, seed=1, epochs=2, batch=9, planned group=10, pid=2
+F01 seed=1 epoch=1/2 train_loss=2.3044 val_macro_f1=0.0317
+F01 seed=1 epoch=2/2 train_loss=2.3438 val_macro_f1=0.0317
+F01: new, convnext_tiny, seed=2, epochs=2, batch=9, planned group=10, pid=2
+F01 seed=2 epoch=1/2 train_loss=2.1925 val_macro_f1=0.0444
+F01 seed=2 epoch=2/2 train_loss=2.1908 val_macro_f1=0.0556
+T00/seed0: one locked test forward on 9 images
+T00/seed0: reuse cached test logits; no new test forward
+T00/seed1: one locked test forward on 9 images
+T00/seed1: reuse cached test logits; no new test forward
+T00/seed2: one locked test forward on 9 images
+T00/seed2: reuse cached test logits; no new test forward
+F01/seed0: one locked test forward on 9 images
+F01/seed0: reuse cached test logits; no new test forward
+F01/seed1: one locked test forward on 9 images
+F01/seed1: reuse cached test logits; no new test forward
+F01/seed2: one locked test forward on 9 images
+F01/seed2: reuse cached test logits; no new test forward
+F01/seed0: reuse cached test logits; no new test forward
+ok
+test_all_augmentations_and_deterministic_eval (test_implementation.TestData.test_all_augmentations_and_deterministic_eval) ... ok
+test_eval_order_and_seeded_train_sampler (test_implementation.TestData.test_eval_order_and_seeded_train_sampler) ... ok
+test_original_two_column_headers_enriched_without_rewriting (test_implementation.TestData.test_original_two_column_headers_enriched_without_rewriting) ... ok
+test_overlap_missing_and_wrong_label_rejected (test_implementation.TestData.test_overlap_missing_and_wrong_label_rejected) ... ok
+test_cutmix_clipped_area_and_labels (test_implementation.TestLosses.test_cutmix_clipped_area_and_labels) ... ok
+test_extreme_logits_and_alpha_buffer (test_implementation.TestLosses.test_extreme_logits_and_alpha_buffer) ... ok
+test_focal_zero_and_smoothing_zero_equal_ce (test_implementation.TestLosses.test_focal_zero_and_smoothing_zero_equal_ce) ... ok
+test_invalid_loss_inputs (test_implementation.TestLosses.test_invalid_loss_inputs) ... ok
+test_mixup_and_mixed_loss_match_soft_targets (test_implementation.TestLosses.test_mixup_and_mixed_loss_match_soft_targets) ... ok
+test_weights_are_normalized_and_effective_number_is_stable (test_implementation.TestLosses.test_weights_are_normalized_and_effective_number_is_stable) ... ok
+test_interrupted_resume_matches_uninterrupted_weights (test_implementation.TestRunContract.test_interrupted_resume_matches_uninterrupted_weights) ... interrupted seed=0 epoch=1/3 train_loss=2.2997 val_macro_f1=0.0444
+interrupted seed=0 epoch=2/3 train_loss=2.3588 val_macro_f1=0.0556
+interrupted seed=0 epoch=3/3 train_loss=2.3467 val_macro_f1=0.0370
+uninterrupted seed=0 epoch=1/3 train_loss=2.2997 val_macro_f1=0.0444
+uninterrupted seed=0 epoch=2/3 train_loss=2.3588 val_macro_f1=0.0556
+uninterrupted seed=0 epoch=3/3 train_loss=2.3467 val_macro_f1=0.0370
+ok
+test_one_epoch_pilot_keeps_scheduler_and_resumes_exactly (test_implementation.TestRunContract.test_one_epoch_pilot_keeps_scheduler_and_resumes_exactly) ... pilot seed=0 epoch=1/3 train_loss=2.2664 val_macro_f1=0.0444
+pilot seed=0 epoch=2/3 train_loss=2.2876 val_macro_f1=0.0370
+pilot seed=0 epoch=3/3 train_loss=2.3199 val_macro_f1=0.0370
+full seed=0 epoch=1/3 train_loss=2.2664 val_macro_f1=0.0444
+full seed=0 epoch=2/3 train_loss=2.2876 val_macro_f1=0.0370
+full seed=0 epoch=3/3 train_loss=2.3199 val_macro_f1=0.0370
+ok
+test_pilot_rejects_test_export_and_invalid_epoch (test_implementation.TestRunContract.test_pilot_rejects_test_export_and_invalid_epoch) ... ok
+test_run_outputs_and_resume_without_touching_test (test_implementation.TestRunContract.test_run_outputs_and_resume_without_touching_test) ... fixture seed=0 epoch=1/2 train_loss=2.2894 val_macro_f1=0.0444
+fixture seed=0 epoch=2/2 train_loss=2.2692 val_macro_f1=0.0444
+ok
+test_test_export_requires_opt_in_and_cannot_be_repeated (test_implementation.TestRunContract.test_test_export_requires_opt_in_and_cannot_be_repeated) ... test_fixture_only seed=0 epoch=1/1 train_loss=2.2895 val_macro_f1=0.0556
+ok
+test_cli_types_and_invalid_config (test_implementation.TestTraining.test_cli_types_and_invalid_config) ... ok
+test_ema_parameters_and_buffers (test_implementation.TestTraining.test_ema_parameters_and_buffers) ... ok
+test_evaluate_order_no_grad_no_buffer_updates (test_implementation.TestTraining.test_evaluate_order_no_grad_no_buffer_updates) ... ok
+test_frozen_backbone_stays_eval_and_unchanged (test_implementation.TestTraining.test_frozen_backbone_stays_eval_and_unchanged) ... ok
+test_groups_cover_trainable_params_and_exempt_bias_norm (test_implementation.TestTraining.test_groups_cover_trainable_params_and_exempt_bias_norm) ... ok
+test_scheduler_warmup_cosine_and_skip_ema_on_overflow (test_implementation.TestTraining.test_scheduler_warmup_cosine_and_skip_ema_on_overflow) ... ok
+test_cached_quality_audit_rejects_order_and_metric_corruption (test_inference_benchmark.TestBenchmark.test_cached_quality_audit_rejects_order_and_metric_corruption) ... ok
+test_real_cpu_tta_benchmark_counts_forward_views (test_inference_benchmark.TestBenchmark.test_real_cpu_tta_benchmark_counts_forward_views) ... ok
+test_warmup_sync_and_measured_samples (test_inference_benchmark.TestBenchmark.test_warmup_sync_and_measured_samples) ... ok
+test_fusion_copy_and_proven_forward_topology_only (test_inference_benchmark.TestInference.test_fusion_copy_and_proven_forward_topology_only) ... ok
+test_predict_eval_no_grad_full_pipeline_matches_explicit_views (test_inference_benchmark.TestInference.test_predict_eval_no_grad_full_pipeline_matches_explicit_views) ... ok
+test_spatial_views_aggregation_and_ensemble_order (test_inference_benchmark.TestInference.test_spatial_views_aggregation_and_ensemble_order) ... ok
+test_temperature_nonincreasing_nll_and_unchanged_ranking (test_inference_benchmark.TestInference.test_temperature_nonincreasing_nll_and_unchanged_ranking) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 14.300s
+
+OK

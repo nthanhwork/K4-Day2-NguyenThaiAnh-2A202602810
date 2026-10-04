@@ -1,0 +1,49 @@
+{
+  "scope": "planning estimate, not measured full experiments",
+  "planning_backbone": "convnext_tiny",
+  "planned_epochs": 12,
+  "n_ablation_runs": 9,
+  "n_final_seeds": 3,
+  "n_baseline_seeds": 3,
+  "ablation_time_factor": 1.0,
+  "final_time_factor": 1.0,
+  "margin_ratio": 0.3,
+  "components": [
+    {
+      "phase": "5 backbone",
+      "runs": 5,
+      "minutes": 41.69458067140003
+    },
+    {
+      "phase": "Ablation T00–T08",
+      "runs": 9,
+      "minutes": 94.69463910120102
+    },
+    {
+      "phase": "Final",
+      "runs": 3,
+      "minutes": 31.56487970040034
+    },
+    {
+      "phase": "Baseline chung kết",
+      "runs": 3,
+      "minutes": 31.56487970040034
+    },
+    {
+      "phase": "Suy luận / benchmark / export (dành chỗ)",
+      "runs": null,
+      "minutes": 30.0
+    },
+    {
+      "phase": "Download / setup (dành chỗ)",
+      "runs": null,
+      "minutes": 10.0
+    },
+    {
+      "phase": "Dự phòng 30%",
+      "runs": null,
+      "minutes": 71.85569375202051
+    }
+  ],
+  "total_minutes": 311.37467292542226
+}

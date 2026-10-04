@@ -1,0 +1,14 @@
+{
+  "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/pilot_6_2.ipynb",
+  "sha256": "01c7739b79cb75a53099774210ad13e73f888a845763bff6860d55f9ccacb9aa",
+  "cells": 18,
+  "code_cells": 8,
+  "schema_and_syntax": "passed",
+  "read_only_execution": "passed, all 8 code cells with RUN_PILOTS=False in temporary output directories",
+  "plot_budget_export_fixture": "passed, synthetic 5-model timings, total budget 312 minutes",
+  "implementation_tests": {
+    "passed": 21,
+    "log": "tests_pilot62.log"
+  },
+  "gpu_full_epoch_pilots_executed": false
+}

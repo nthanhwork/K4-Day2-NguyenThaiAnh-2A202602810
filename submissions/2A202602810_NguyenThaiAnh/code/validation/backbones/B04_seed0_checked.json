@@ -1,0 +1,23 @@
+{
+  "exp_id": "B04",
+  "backbone": "deit_small_patch16_224",
+  "pretrained_tag": "fb_in1k",
+  "seed": 0,
+  "epochs": 12,
+  "batch_size": 64,
+  "img_size": 224,
+  "best_epoch": 12,
+  "val_macro_f1": 0.9554963580715707,
+  "val_top1": 0.9674378748928878,
+  "val_ece": 0.011609109801178248,
+  "params_m": 21.669129,
+  "gmacs": 4.60795776,
+  "train_seconds_per_epoch_observed": 50.230465178833335,
+  "timing_scope": "user scheduling; may share GPU with another training job",
+  "parallel_group_planned": 1,
+  "total_skipped_updates": 2,
+  "completed_epochs": 12,
+  "test_evaluated": false,
+  "run_path": "runs/B04/seed0",
+  "outputs_verified": true
+}

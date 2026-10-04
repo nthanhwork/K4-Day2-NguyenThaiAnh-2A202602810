@@ -1,0 +1,480 @@
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+  exp_id    status  macro_f1_val  delta_macro_f1_pp
+0    T00  complete      0.966701                0.0
+1    T01       new           NaN                NaN
+2    T02       new           NaN                NaN
+3    T03       new           NaN                NaN
+4    T04       new           NaN                NaN
+5    T05       new           NaN                NaN
+6    T06       new           NaN                NaN
+7    T07       new           NaN                NaN
+Hoàn thành các run trước T08: ['T01', 'T02', 'T03', 'T04', 'T05', 'T06', 'T07']
+  exp_id          axis    status  ...  top1_val   nll_val  delta_macro_f1_pp
+0    T00      baseline  complete  ...  0.974293  0.103447                0.0
+1    T01          init       new  ...       NaN       NaN                NaN
+2    T02          init       new  ...       NaN       NaN                NaN
+3    T03  augmentation       new  ...       NaN       NaN                NaN
+4    T04  augmentation       new  ...       NaN       NaN                NaN
+5    T05          loss       new  ...       NaN       NaN                NaN
+6    T06          loss       new  ...       NaN       NaN                NaN
+7    T07          loss       new  ...       NaN       NaN                NaN
+
+[8 rows x 7 columns]
+Δ tính bằng điểm phần trăm; new/resume chưa có metric kết quả đầy đủ.
+Bảng: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/ablation_convnext_tiny/training_ablation.csv
+                      f1    recall
+exp_id               T00       T00
+class_name
+Chinee Apple    0.943311  0.924444
+Lantana         0.958525  0.976526
+Negatives       0.983733  0.979681
+Parkinsonia     0.982968  0.980583
+Parthenium      0.990099  0.980392
+Prickly Acacia  0.952607  0.948113
+Rubber Vine     0.990099  0.990099
+Siam Weed       0.968182  0.990698
+Snake Weed      0.930788  0.960591
+Số ảnh từng lớp lấy từ toàn bộ validation; không thay bằng subset.
+{'candidate_id': 'T00', 'source_run': '/home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/B03/seed0', 'macro_f1_val': 0.9667012831519156, 'seed': 0, 'selection_split': 'val', 'single_seed_only': True, 'final_configuration_locked': False, 'section8_complete': False}
+<IPython.core.display.Markdown object>
+Phần 8: CHƯA ĐỦ RUN
+PASS ablation_convnext_tiny.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+                                                                       0
+exp_id                                                               T01
+seed                                                                   0
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                             scratch
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chưa hoàn thành run; bật RUN_TRAINING và chạy trên host có GPU.
+PASS train_T01_convnext_scratch.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+                                                                       0
+exp_id                                                               T02
+seed                                                                   0
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                              frozen
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chưa hoàn thành run; bật RUN_TRAINING và chạy trên host có GPU.
+PASS train_T02_convnext_frozen.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+                                                                       0
+exp_id                                                               T03
+seed                                                                   0
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                color
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chưa hoàn thành run; bật RUN_TRAINING và chạy trên host có GPU.
+PASS train_T03_convnext_color.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+                                                                       0
+exp_id                                                               T04
+seed                                                                   0
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                               cutmix
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chưa hoàn thành run; bật RUN_TRAINING và chạy trên host có GPU.
+PASS train_T04_convnext_cutmix.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+                                                                       0
+exp_id                                                               T05
+seed                                                                   0
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                                  ls
+label_smoothing                                                      0.1
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chưa hoàn thành run; bật RUN_TRAINING và chạy trên host có GPU.
+PASS train_T05_convnext_label_smoothing.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+                                                                       0
+exp_id                                                               T06
+seed                                                                   0
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                               focal
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chưa hoàn thành run; bật RUN_TRAINING và chạy trên host có GPU.
+PASS train_T06_convnext_focal.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+                                                                       0
+exp_id                                                               T07
+seed                                                                   0
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                         ce_weighted
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                    0.0
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chưa hoàn thành run; bật RUN_TRAINING và chạy trên host có GPU.
+PASS train_T07_convnext_weighted_ce.ipynb
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+T00 = B03/seed0; F1 val = 96.6701%; đủ 12 epoch
+  exp_id  ...    status
+0    T00  ...  complete
+1    T01  ...       new
+2    T02  ...       new
+3    T03  ...       new
+4    T04  ...       new
+5    T05  ...       new
+6    T06  ...       new
+7    T07  ...       new
+
+[8 rows x 4 columns]
+Không tái train B03; mọi run T kế thừa seed/split/batch/LR/scheduler/preprocessing của B03.
+  exp_id    status  macro_f1_val  delta_macro_f1_pp
+0    T00  complete      0.966701                0.0
+1    T01       new           NaN                NaN
+2    T02       new           NaN                NaN
+3    T03       new           NaN                NaN
+4    T04       new           NaN                NaN
+5    T05       new           NaN                NaN
+6    T06       new           NaN                NaN
+7    T07       new           NaN                NaN
+Hoàn thành các run trước T08: ['T01', 'T02', 'T03', 'T04', 'T05', 'T06', 'T07']
+  exp_id          axis    status  ...  top1_val   nll_val  delta_macro_f1_pp
+0    T00      baseline  complete  ...  0.974293  0.103447                0.0
+1    T01          init       new  ...       NaN       NaN                NaN
+2    T02          init       new  ...       NaN       NaN                NaN
+3    T03  augmentation       new  ...       NaN       NaN                NaN
+4    T04  augmentation       new  ...       NaN       NaN                NaN
+5    T05          loss       new  ...       NaN       NaN                NaN
+6    T06          loss       new  ...       NaN       NaN                NaN
+7    T07          loss       new  ...       NaN       NaN                NaN
+
+[8 rows x 7 columns]
+Δ tính bằng điểm phần trăm; new/resume chưa có metric kết quả đầy đủ.
+Bảng: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/ablation_convnext_tiny/training_ablation.csv
+                      f1    recall
+exp_id               T00       T00
+class_name
+Chinee Apple    0.943311  0.924444
+Lantana         0.958525  0.976526
+Negatives       0.983733  0.979681
+Parkinsonia     0.982968  0.980583
+Parthenium      0.990099  0.980392
+Prickly Acacia  0.952607  0.948113
+Rubber Vine     0.990099  0.990099
+Siam Weed       0.968182  0.990698
+Snake Weed      0.930788  0.960591
+Số ảnh từng lớp lấy từ toàn bộ validation; không thay bằng subset.
+{'candidate_id': 'T00', 'source_run': '/home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/B03/seed0', 'macro_f1_val': 0.9667012831519156, 'seed': 0, 'selection_split': 'val', 'single_seed_only': True, 'final_configuration_locked': False, 'section8_complete': False}
+<IPython.core.display.Markdown object>
+PASS train_T08_convnext_combination.ipynb

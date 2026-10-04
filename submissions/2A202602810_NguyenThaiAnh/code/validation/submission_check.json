@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "sheets": {
+    "Backbones": 5,
+    "Training": 9,
+    "Inference": 5,
+    "Final": 8,
+    "PerClass": 72,
+    "Latency": 24,
+    "Summary": 10
+  },
+  "prediction_files_checked": 40,
+  "notebooks_checked": 24,
+  "local_links_checked": 48,
+  "n_seeds": 3,
+  "test_images_per_seed": 3507,
+  "sample_std_ddof": 1,
+  "final_test_macro_f1_mean": 0.9777030184482886,
+  "final_test_macro_f1_std": 0.0011191126490755676,
+  "training_performed": false,
+  "test_forward_performed": false,
+  "colab_status": "GitHub-backed link requires the commit to be pushed to main",
+  "results_sha256": "26e9a3d22e49e301f77f751c06edeb0d2b3a723b564490c5932d4fa379f396b9",
+  "report_sha256": "6fc0fe556e4c68ed3d7fbd807e5d5395d7a83e950a0b445e5c6b84cbd571c4a2",
+  "pdf_sha256": "d745bf36da7436caf01d773c59753302e9ffad660237349f2233ad87782b3e7b"
+}

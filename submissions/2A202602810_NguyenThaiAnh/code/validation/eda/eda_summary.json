@@ -1,0 +1,62 @@
+{
+  "fold": 0,
+  "seed": 42,
+  "split_sizes": {
+    "train": 10501,
+    "val": 3501,
+    "test": 3507
+  },
+  "overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "union": 17509,
+  "missing_images": 0,
+  "majority_class_train": "Negative",
+  "majority_share_train": 0.5202361679840015,
+  "imbalance_ratio_train": 9.029752066115703,
+  "train_label_only_majority_top1": 0.5202361679840015,
+  "train_label_only_majority_macro_f1": 0.07604610373340015,
+  "train_images_decoded": 10501,
+  "image_error_count": 0,
+  "train_resolution_modes": [
+    {
+      "width": 256,
+      "height": 256,
+      "original_mode": "RGB",
+      "images": 10501
+    }
+  ],
+  "pixel_statistics": {
+    "scope": "seeded random TRAIN sample only",
+    "seed": 42,
+    "images": 512,
+    "pixels_per_channel": 33554432,
+    "mean_rgb_0_1": [
+      0.3806934619651121,
+      0.39030806492356696,
+      0.38160638914388767
+    ],
+    "std_rgb_0_1": [
+      0.23574196811076348,
+      0.23424394682248223,
+      0.2324646346699203
+    ],
+    "pretrained_normalization_policy": "retain the chosen model pretrained_cfg mean/std"
+  },
+  "byte_duplicate_check_completed": true,
+  "byte_duplicate_groups": 0,
+  "cross_split_byte_duplicate_groups": 0,
+  "source_discrepancies": [
+    {
+      "Filename": "20170714-110407-3.jpg",
+      "split_label": 0,
+      "labels_csv_label": 1,
+      "split_species": "Chinee apple",
+      "labels_csv_species": "Lantana"
+    }
+  ],
+  "visual_samples_per_class": 3,
+  "visual_images_split": "train"
+}

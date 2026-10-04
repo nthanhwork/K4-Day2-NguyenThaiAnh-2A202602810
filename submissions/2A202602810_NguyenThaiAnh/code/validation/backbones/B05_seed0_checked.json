@@ -1,0 +1,23 @@
+{
+  "exp_id": "B05",
+  "backbone": "efficientnet_b0",
+  "pretrained_tag": "ra_in1k",
+  "seed": 0,
+  "epochs": 12,
+  "batch_size": 64,
+  "img_size": 224,
+  "best_epoch": 8,
+  "val_macro_f1": 0.8771764463630128,
+  "val_top1": 0.9063124821479577,
+  "val_ece": 0.029471153192811583,
+  "params_m": 4.019077,
+  "gmacs": 0.398084384,
+  "train_seconds_per_epoch_observed": 34.453202489500086,
+  "timing_scope": "user scheduling; may share GPU with another training job",
+  "parallel_group_planned": 2,
+  "total_skipped_updates": 2,
+  "completed_epochs": 12,
+  "test_evaluated": false,
+  "run_path": "runs/B05/seed0",
+  "outputs_verified": true
+}

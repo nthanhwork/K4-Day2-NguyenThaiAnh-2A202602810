@@ -1,0 +1,46 @@
+test_single_seed_has_nan_std (test_eval.TestAggregation.test_single_seed_has_nan_std) ... ok
+test_std_uses_ddof_1 (test_eval.TestAggregation.test_std_uses_ddof_1) ... ok
+test_vector_mean_std (test_eval.TestAggregation.test_vector_mean_std) ... ok
+test_grade_end_to_end (test_eval.TestCLI.test_grade_end_to_end) ... ok
+test_grade_flags_missing_optional_inputs (test_eval.TestCLI.test_grade_flags_missing_optional_inputs) ... ok
+test_grade_i4a_zero_when_calibration_gets_worse (test_eval.TestCLI.test_grade_i4a_zero_when_calibration_gets_worse) ... ok
+test_grade_warns_on_too_few_seeds (test_eval.TestCLI.test_grade_warns_on_too_few_seeds) ... ok
+test_score_end_to_end (test_eval.TestCLI.test_score_end_to_end) ... ok
+test_score_reports_error_with_exit_code_2 (test_eval.TestCLI.test_score_reports_error_with_exit_code_2) ... LỖI: /tmp/tmp2cngj83d/F01_seed0_test.csv: không khớp test CSV (/tmp/tmp2cngj83d/short.csv): thừa 590 ảnh, thiếu 0 ảnh
+ok
+test_bin_boundary_is_right_inclusive (test_eval.TestECE.test_bin_boundary_is_right_inclusive) ... ok
+test_hand_computed_single_bin (test_eval.TestECE.test_hand_computed_single_bin) ... ok
+test_hand_computed_two_bins (test_eval.TestECE.test_hand_computed_two_bins) ... ok
+test_perfect_confidence_all_correct_is_zero (test_eval.TestECE.test_perfect_confidence_all_correct_is_zero) ... ok
+test_all_metrics_match_sklearn (test_eval.TestMetricsAgainstSklearn.test_all_metrics_match_sklearn) ... ok
+test_class_never_predicted_gives_zero_f1 (test_eval.TestMetricsAgainstSklearn.test_class_never_predicted_gives_zero_f1) ... ok
+test_i1_boundaries (test_eval.TestPoints.test_i1_boundaries) ... ok
+test_i2_rules (test_eval.TestPoints.test_i2_rules) ... ok
+test_i3_tiers (test_eval.TestPoints.test_i3_tiers) ... ok
+test_check_against_csv (test_eval.TestValidation.test_check_against_csv) ... ok
+test_duplicate_seed_rejected (test_eval.TestValidation.test_duplicate_seed_rejected) ... ok
+test_rejects_duplicate_filename (test_eval.TestValidation.test_rejects_duplicate_filename) ... ok
+test_rejects_missing_column (test_eval.TestValidation.test_rejects_missing_column) ... ok
+test_rejects_pred_not_argmax (test_eval.TestValidation.test_rejects_pred_not_argmax) ... ok
+test_rejects_probs_not_summing_to_one (test_eval.TestValidation.test_rejects_probs_not_summing_to_one) ... ok
+test_rejects_raw_logits (test_eval.TestValidation.test_rejects_raw_logits) ... ok
+test_valid_file_loads (test_eval.TestValidation.test_valid_file_loads) ... ok
+test_save_predictions_rejects_logits (test_starter.TestPredictionContract.test_save_predictions_rejects_logits) ... ok
+test_save_predictions_rejects_wrong_shape (test_starter.TestPredictionContract.test_save_predictions_rejects_wrong_shape) ... ok
+test_saved_predictions_are_accepted_by_eval (test_starter.TestPredictionContract.test_saved_predictions_are_accepted_by_eval) ... ok
+test_all_python_files_compile (test_starter.TestStarterFiles.test_all_python_files_compile) ... ok
+test_cli_helpers_in_train_are_stubs (test_starter.TestStarterFiles.test_cli_helpers_in_train_are_stubs) ... ok
+test_notebook_is_valid_and_clean (test_starter.TestStarterFiles.test_notebook_is_valid_and_clean) ... ok
+test_starter_has_no_complete_helper_modules (test_starter.TestStarterFiles.test_starter_has_no_complete_helper_modules)
+Mọi file trong starter/ đều là pseudo-code: không còn module hoàn chỉnh kiểu records.py. ... ok
+test_todo_stubs_are_still_stubs (test_starter.TestStarterFiles.test_todo_stubs_are_still_stubs)
+Mỗi module khung phải còn nhiều hàm chưa cài đặt (sinh viên tự làm). ... ok
+test_baseline_defaults_match_guide (test_starter.TestTrainSkeleton.test_baseline_defaults_match_guide) ... ok
+test_pred_path_follows_eval_naming (test_starter.TestTrainSkeleton.test_pred_path_follows_eval_naming) ... ok
+test_run_dir (test_starter.TestTrainSkeleton.test_run_dir) ... ok
+test_test_predictions_off_by_default (test_starter.TestTrainSkeleton.test_test_predictions_off_by_default) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.290s
+
+OK

@@ -1,0 +1,89 @@
+{
+  "notebooks": [
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/ablation_convnext_tiny.ipynb",
+      "code_cells": 8,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "281b6742d9440351f4fc58041cdcf84b646b6470b57fea5afd1a67db74cf9659"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T01_convnext_scratch.ipynb",
+      "code_cells": 3,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "0a599a02511fac3bd4b70ddbe5a9524a72cb2707e179358fd7291f453fa72fbe"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T02_convnext_frozen.ipynb",
+      "code_cells": 3,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "2fdb84a5696aee14979e21c1a0ed5b21507765f2c34de63b1e71b26737ac1e84"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T03_convnext_color.ipynb",
+      "code_cells": 3,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "233f34fb005d2b02dea1af7d4df819c71683843807964ec9f4b808a8ca7ab496"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T04_convnext_cutmix.ipynb",
+      "code_cells": 3,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "39f4de771f891b5f3c977ba5f2ac48af7a24b6a97e706a80c6195b46b9096da9"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T05_convnext_label_smoothing.ipynb",
+      "code_cells": 3,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "b0b42c6aa97c32a609e9a1e7a373ff888b3ace2b54e8f22026ecb9efa960e347"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T06_convnext_focal.ipynb",
+      "code_cells": 3,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "db97a47ba6c1234ad2fd2efc154328a248040ad44b29f956f549bf7514507b23"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T07_convnext_weighted_ce.ipynb",
+      "code_cells": 3,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "2bf347d2a0d59af4608365e4eead4d239d2eb0dfb9081670e1de60856fb2ee28"
+    },
+    {
+      "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/train_T08_convnext_combination.ipynb",
+      "code_cells": 5,
+      "schema_valid": true,
+      "syntax_valid": true,
+      "readonly_execution_passed": true,
+      "sha256": "b0af5baa621c6cbd40674df7e9a222a0b1cf2987ec113e83903db9e069969a10"
+    }
+  ],
+  "baseline_artifacts_unchanged": true,
+  "baseline_sha256": {
+    "runs/B03/seed0/config.json": "5642236ddb3566700e06a0d42e97c47229c88cb5bdf02f00a6e3ecacb34a5d61",
+    "runs/B03/seed0/summary.json": "a66fe3ff15b9e1f7a300575169d0960bb3298f797bcdd4d2eb1a073e106a8d19",
+    "runs/B03/seed0/best.pt": "bba6dd6b58933859c899f047361c0ff6730a911979ef6b45fc04db09b243ea0d",
+    "runs/B03/seed0/last.pt": "9429f9ba5de96dbc682d6c33238c692a61ddc2005c3614dc8f9a294c0e131c8e"
+  },
+  "real_ablation_runs_started": false,
+  "real_ablation_run_dirs": [],
+  "test_evaluated": false,
+  "submission_tests_passed": 27,
+  "new_ablation_integration_tests": 3,
+  "cli_readonly_passed": true
+}

@@ -1,0 +1,29 @@
+{
+  "downloaded_at_utc": "2026-10-04T04:21:48.805314+00:00",
+  "files": {
+    "labels.csv": {
+      "url": "https://raw.githubusercontent.com/AlexOlsen/DeepWeeds/master/labels/labels.csv",
+      "sha256": "6fb95b89fd9d384f94e185a5cab6c5da7c987649399c90618ecc60acfb0112eb",
+      "bytes": 598898,
+      "rows": 17509
+    },
+    "train_subset0.csv": {
+      "url": "https://raw.githubusercontent.com/AlexOlsen/DeepWeeds/master/labels/train_subset0.csv",
+      "sha256": "a2e63f561a545837c8cabaa276a957ccf1293ec985c9d8fbc49d67b4fd5abdb2",
+      "bytes": 252039,
+      "rows": 10501
+    },
+    "val_subset0.csv": {
+      "url": "https://raw.githubusercontent.com/AlexOlsen/DeepWeeds/master/labels/val_subset0.csv",
+      "sha256": "1fa70a03a68def06c921a1dd7f0b53e96490f6dfad51d7d423bb145161ebc478",
+      "bytes": 84039,
+      "rows": 3501
+    },
+    "test_subset0.csv": {
+      "url": "https://raw.githubusercontent.com/AlexOlsen/DeepWeeds/master/labels/test_subset0.csv",
+      "sha256": "fb212793b988bc0455aae2e48cb9eb3168014c2f47fbdb93f5f1e284e0974f75",
+      "bytes": 84183,
+      "rows": 3507
+    }
+  }
+}

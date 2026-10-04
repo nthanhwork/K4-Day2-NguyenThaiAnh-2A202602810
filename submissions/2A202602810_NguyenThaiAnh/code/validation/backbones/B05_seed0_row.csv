@@ -1,0 +1,2 @@
+exp_id,backbone,pretrained_tag,seed,epochs,batch_size,img_size,best_epoch,val_macro_f1,val_top1,val_ece,params_m,gmacs,train_seconds_per_epoch_observed,timing_scope,parallel_group_planned,total_skipped_updates,completed_epochs,test_evaluated,run_path,outputs_verified
+B05,efficientnet_b0,ra_in1k,0,12,64,224,8,0.8771764463630128,0.9063124821479577,0.029471153192811583,4.019077,0.398084384,34.453202489500086,user scheduling; may share GPU with another training job,2,2,12,False,runs/B05/seed0,True

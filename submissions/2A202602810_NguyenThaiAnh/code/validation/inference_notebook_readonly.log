@@ -1,0 +1,71 @@
+Nguồn: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/T04/seed0/best.pt
+Best epoch: 12
+Macro-F1 val T04: 0.9754569938083567
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+Output: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/inference/I_T04_seed0
+  method                                   description  K     dtype
+0    I00                                   single view  1      fp32
+1    I01  original + horizontal flip, mean probability  2      fp32
+2    I02          five spatial crops, mean probability  5      fp32
+3    I07   scalar temperature fitted on I00 validation  1      fp32
+4    I08               single view, CUDA FP16 autocast  1  amp-fp16
+Phạm vi: resident normalized 256x256 tensor -> GPU crop/views -> model -> aggregation/calibration -> softmax; excludes disk/CPU preprocessing/H2D and offline temperature fitting
+  method  ... relative_p50_cost
+0    I00  ...          1.000000
+1    I01  ...          1.915548
+2    I02  ...          4.658922
+3    I07  ...          1.004872
+4    I08  ...          0.996399
+
+[5 rows x 24 columns]
+  method  ... relative_p50_cost
+0    I00  ...          1.000000
+1    I01  ...          1.915548
+2    I02  ...          4.658922
+3    I07  ...          1.004872
+4    I08  ...          0.996399
+
+[5 rows x 24 columns]
+  method    status  ...  relative_p50_cost  throughput_images_per_s
+0    I00  complete  ...           1.000000               466.587641
+1    I01  complete  ...           1.915548               233.050055
+2    I02  complete  ...           4.658922                92.907449
+3    I07  complete  ...           1.004872               462.057922
+4    I08  complete  ...           0.996399               813.274211
+
+[5 rows x 12 columns]
+{'T': 0.9697185658286377, 'fit_split': 'val', 'n': 3501, 'nll_before': 0.0734275094462864, 'nll_after': 0.07329743059337596, 'ece_before': 0.006140616216349457, 'ece_after': 0.0051771045103122144, 'accuracy_unchanged': True, 'fit_method': 'validation NLL, golden-section log(T) in [-6,6], include T=1'}
+{'max_abs_logit_difference': 0.0, 'source_macro_f1': 0.9754569938083567, 'probabilities_match': True}
+<IPython.core.display.Image object>
+<IPython.core.display.Image object>
+                      f1                      ...    recall
+method               I00       I01       I02  ...       I02       I07       I08
+class_name                                    ...
+Chinee Apple    0.952164  0.947368  0.952164  ...  0.928889  0.928889  0.928889
+Lantana         0.976959  0.979118  0.979215  ...  0.995305  0.995305  0.995305
+Negatives       0.989295  0.989300  0.989011  ...  0.988468  0.989566  0.989566
+Parkinsonia     0.990244  0.987775  0.990244  ...  0.985437  0.985437  0.985437
+Parthenium      0.992629  0.995098  0.990196  ...  0.990196  0.990196  0.990196
+Prickly Acacia  0.962441  0.962441  0.957944  ...  0.966981  0.966981  0.966981
+Rubber Vine     0.995025  0.992519  0.995025  ...  0.990099  0.990099  0.990099
+Siam Weed       0.981481  0.983834  0.981481  ...  0.986047  0.986047  0.986047
+Snake Weed      0.938875  0.936893  0.941463  ...  0.950739  0.945813  0.945813
+
+[9 rows x 10 columns]
+  method  ...  images_per_s
+0    I00  ...    268.264666
+1    I00  ...    466.587641
+2    I01  ...    140.045901
+3    I01  ...    233.050055
+4    I02  ...     57.580848
+5    I02  ...     92.907449
+6    I07  ...    266.963958
+7    I07  ...    462.057922
+8    I08  ...    269.234119
+9    I08  ...    813.274211
+
+[10 rows x 19 columns]
+Mỗi Ixx/latency.json giữ đủ các samples_ms và protocol.
+{'section9_complete': True, 'selection_split': 'val', 'source_id': 'T04', 'seed': 0, 'final_configuration_locked': False, 'test_evaluated': False, 'single_seed_only': True, 'latency_budget_p95_ms': 100, 'quality_candidate': 'I07', 'realtime_candidate': 'I07', 'tie_breaking': 'macro-F1 descending, NLL ascending, p95 ascending, method ID'}
+<IPython.core.display.Markdown object>
+Phần 9: ĐỦ THÍ NGHIỆM; bổ sung nhận xét

@@ -1,0 +1,252 @@
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+Final output: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/finalization/ConvNeXt_Final_v1
+Training: False Test: False Evaluator: False
+{'locked_at_utc': '2026-10-04T10:41:18.011873+00:00', 'final': 'T04 recipe + I07', 'baseline': 'B03 recipe + I00, same ConvNeXt backbone', 'seeds': [0, 1, 2], 'checkpoint_rule': 'highest validation macro-F1; earliest epoch on ties', 'inference': {'final': 'I07', 'baseline': 'I00', 'k_views': 1, 'aggregation': 'single logits', 'dtype': 'FP32', 'fusion': False, 'ensemble': False, 'temperature': 'per final seed, validation NLL; log(T) in [-6,6]; include T=1', 'test_policy': 'one raw single-view forward per checkpoint; calibrated/uncalibrated share logits'}}
+  role  seed  seed0_reuse source_id method
+0  T00     0         True       B03    I00
+1  T00     1        False       T00    I00
+2  T00     2        False       T00    I00
+3  F01     0         True       T04    I07
+4  F01     1        False       F01    I07
+5  F01     2        False       F01    I07
+  role  seed source_id  ...  val_macro_f1  val_top1   val_ece
+0  T00     0       B03  ...      0.966701  0.974293  0.015793
+1  T00     1       T00  ...           NaN       NaN       NaN
+2  T00     2       T00  ...           NaN       NaN       NaN
+3  F01     0       T04  ...      0.975457  0.981720  0.005177
+4  F01     1       F01  ...           NaN       NaN       NaN
+5  F01     2       F01  ...           NaN       NaN       NaN
+
+[6 rows x 10 columns]
+Phần 10 chưa hoàn tất; xem trạng thái 6 mục trong bảng.
+  role  seed source_id  ...  val_macro_f1  val_top1   val_ece
+0  T00     0       B03  ...      0.966701  0.974293  0.015793
+1  T00     1       T00  ...           NaN       NaN       NaN
+2  T00     2       T00  ...           NaN       NaN       NaN
+3  F01     0       T04  ...      0.975457  0.981720  0.005177
+4  F01     1       F01  ...           NaN       NaN       NaN
+5  F01     2       F01  ...           NaN       NaN       NaN
+
+[6 rows x 10 columns]
+  role  seed source_id         T  val_macro_f1  val_ece_before  val_ece_after
+0  T00     0       B03  1.000000      0.966701        0.015793       0.015793
+1  F01     0       T04  0.969719      0.975457        0.006141       0.005177
+T00 seed 0 source B03
+<IPython.core.display.Image object>
+F01 seed 0 source T04
+<IPython.core.display.Image object>
+Empty DataFrame
+Columns: []
+Index: []
+Chưa đủ kết quả chung kết để score/grade.
+  role  seed source_id  ...  val_macro_f1  val_top1   val_ece
+0  T00     0       B03  ...      0.966701  0.974293  0.015793
+1  T00     1       T00  ...           NaN       NaN       NaN
+2  T00     2       T00  ...           NaN       NaN       NaN
+3  F01     0       T04  ...      0.975457  0.981720  0.005177
+4  F01     1       F01  ...           NaN       NaN       NaN
+5  F01     2       F01  ...           NaN       NaN       NaN
+
+[6 rows x 10 columns]
+Phần 10 chưa hoàn tất; xem trạng thái 6 mục trong bảng.
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+Final output: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/finalization/ConvNeXt_Final_v1
+                                                                       0
+exp_id                                                               F01
+seed                                                                   1
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                               cutmix
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chế độ đọc; không train hoặc đánh giá test.
+  role  seed source_id  ...  val_macro_f1  val_top1   val_ece
+0  T00     0       B03  ...      0.966701  0.974293  0.015793
+1  T00     1       T00  ...           NaN       NaN       NaN
+2  T00     2       T00  ...           NaN       NaN       NaN
+3  F01     0       T04  ...      0.975457  0.981720  0.005177
+4  F01     1       F01  ...           NaN       NaN       NaN
+5  F01     2       F01  ...           NaN       NaN       NaN
+
+[6 rows x 10 columns]
+Khi đủ bốn run seed 1/2: mở master phần 10 để khóa checkpoint set và đánh giá test.
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+Final output: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/finalization/ConvNeXt_Final_v1
+                                                                       0
+exp_id                                                               F01
+seed                                                                   2
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                               cutmix
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chế độ đọc; không train hoặc đánh giá test.
+  role  seed source_id  ...  val_macro_f1  val_top1   val_ece
+0  T00     0       B03  ...      0.966701  0.974293  0.015793
+1  T00     1       T00  ...           NaN       NaN       NaN
+2  T00     2       T00  ...           NaN       NaN       NaN
+3  F01     0       T04  ...      0.975457  0.981720  0.005177
+4  F01     1       F01  ...           NaN       NaN       NaN
+5  F01     2       F01  ...           NaN       NaN       NaN
+
+[6 rows x 10 columns]
+Khi đủ bốn run seed 1/2: mở master phần 10 để khóa checkpoint set và đánh giá test.
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+Final output: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/finalization/ConvNeXt_Final_v1
+                                                                       0
+exp_id                                                               T00
+seed                                                                   1
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chế độ đọc; không train hoặc đánh giá test.
+  role  seed source_id  ...  val_macro_f1  val_top1   val_ece
+0  T00     0       B03  ...      0.966701  0.974293  0.015793
+1  T00     1       T00  ...           NaN       NaN       NaN
+2  T00     2       T00  ...           NaN       NaN       NaN
+3  F01     0       T04  ...      0.975457  0.981720  0.005177
+4  F01     1       F01  ...           NaN       NaN       NaN
+5  F01     2       F01  ...           NaN       NaN       NaN
+
+[6 rows x 10 columns]
+Khi đủ bốn run seed 1/2: mở master phần 10 để khóa checkpoint set và đánh giá test.
+ROOT: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810
+Python: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/.venv/bin/python
+Final output: /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/runs/finalization/ConvNeXt_Final_v1
+                                                                       0
+exp_id                                                               T00
+seed                                                                   2
+fold                                                                   0
+backbone                                                   convnext_tiny
+init                                                            finetune
+drop_rate                                                            0.0
+img_size                                                             224
+aug                                                                basic
+sampler                                                             None
+mix                                                                 None
+mix_alpha                                                            1.0
+loss                                                                  ce
+label_smoothing                                                        0
+focal_gamma                                                          2.0
+class_weight_beta                                                   None
+epochs                                                                12
+batch_size                                                            64
+lr_backbone                                                       0.0001
+lr_head                                                            0.001
+weight_decay                                                        0.05
+warmup_epochs                                                          1
+ema_decay                                                           None
+amp                                                                 True
+num_workers                                                            2
+images_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+labels_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+out_dir                /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+pred_dir               /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+save_test_predictions                                              False
+curves_dir             /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+cache_dir              /home/sakana/Code/VinUni/Day16/K4-Day2-NguyenT...
+device                                                            cuda:0
+deterministic                                                       True
+resume                                                             False
+grad_clip                                                            1.0
+Chế độ đọc; không train hoặc đánh giá test.
+  role  seed source_id  ...  val_macro_f1  val_top1   val_ece
+0  T00     0       B03  ...      0.966701  0.974293  0.015793
+1  T00     1       T00  ...           NaN       NaN       NaN
+2  T00     2       T00  ...           NaN       NaN       NaN
+3  F01     0       T04  ...      0.975457  0.981720  0.005177
+4  F01     1       F01  ...           NaN       NaN       NaN
+5  F01     2       F01  ...           NaN       NaN       NaN
+
+[6 rows x 10 columns]
+Khi đủ bốn run seed 1/2: mở master phần 10 để khóa checkpoint set và đánh giá test.

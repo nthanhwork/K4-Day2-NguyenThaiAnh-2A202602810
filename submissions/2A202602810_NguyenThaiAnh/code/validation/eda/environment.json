@@ -1,0 +1,14 @@
+{
+  "python": "3.14.7",
+  "seed": 42,
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.11.2",
+    "torch": "2.10.0",
+    "torchvision": "0.25.0"
+  },
+  "dataset_module": "/home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/submissions/2A202602810_NguyenThaiAnh/code/dataset.py",
+  "image_directory": "/home/sakana/Code/VinUni/Day16/K4-Day2-NguyenThaiAnh-2A202602810/data"
+}

@@ -1,0 +1,24 @@
+true_class,predicted_class,n
+Negative,Lantana,9
+Negative,Prickly acacia,7
+Chinee apple,Snake weed,6
+Negative,Siam weed,4
+Negative,Rubber vine,4
+Negative,Chinee apple,3
+Snake weed,Negative,3
+Snake weed,Chinee apple,2
+Parkinsonia,Prickly acacia,2
+Rubber vine,Negative,2
+Lantana,Snake weed,2
+Lantana,Negative,2
+Siam weed,Negative,2
+Chinee apple,Parthenium,1
+Chinee apple,Lantana,1
+Chinee apple,Negative,1
+Parthenium,Chinee apple,1
+Negative,Parkinsonia,1
+Negative,Snake weed,1
+Prickly acacia,Parthenium,1
+Prickly acacia,Negative,1
+Parthenium,Parkinsonia,1
+Snake weed,Parthenium,1

@@ -1,0 +1,23 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "all_passed": true,
+  "split": "val",
+  "results": [
+    {
+      "role": "T00",
+      "source_id": "B03",
+      "n_validation_images": 64,
+      "max_abs_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "role": "F01",
+      "source_id": "T04",
+      "n_validation_images": 64,
+      "max_abs_logit_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "test_evaluated": false,
+  "new_training_started": false
+}

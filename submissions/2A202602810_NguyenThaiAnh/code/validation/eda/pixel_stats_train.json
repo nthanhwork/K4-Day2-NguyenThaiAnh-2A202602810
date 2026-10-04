@@ -1,0 +1,17 @@
+{
+  "scope": "seeded random TRAIN sample only",
+  "seed": 42,
+  "images": 512,
+  "pixels_per_channel": 33554432,
+  "mean_rgb_0_1": [
+    0.3806934619651121,
+    0.39030806492356696,
+    0.38160638914388767
+  ],
+  "std_rgb_0_1": [
+    0.23574196811076348,
+    0.23424394682248223,
+    0.2324646346699203
+  ],
+  "pretrained_normalization_policy": "retain the chosen model pretrained_cfg mean/std"
+}

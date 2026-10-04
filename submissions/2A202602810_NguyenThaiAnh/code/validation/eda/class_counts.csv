@@ -1,0 +1,10 @@
+Label,Species,train,val,test,all_splits,labels_csv,paper_reference,delta_split_vs_labels_csv
+0,Chinee apple,675,225,226,1126,1125,1125,1
+1,Lantana,637,213,213,1063,1064,1064,-1
+2,Parkinsonia,618,206,207,1031,1031,1031,0
+3,Parthenium,613,204,205,1022,1022,1022,0
+4,Prickly acacia,637,212,213,1062,1062,1062,0
+5,Rubber vine,605,202,202,1009,1009,1009,0
+6,Siam weed,644,215,215,1074,1074,1074,0
+7,Snake weed,609,203,204,1016,1016,1016,0
+8,Negative,5463,1821,1822,9106,9106,9106,0

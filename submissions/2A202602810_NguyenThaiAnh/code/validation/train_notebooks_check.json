@@ -1,0 +1,72 @@
+[
+  {
+    "notebook": "train_B01_resnet50.ipynb",
+    "cells": 18,
+    "code_cells": 8,
+    "exp_id": "B01",
+    "backbone": "resnet50",
+    "group": 3,
+    "schema": "passed",
+    "read_only_execution": "passed",
+    "real_model_training_started": false,
+    "sha256": "274a95d13976b0bf581ec904883359ffb84993c56a2e7cf12f9442c3a53355bf",
+    "submission_suite_tests_passed": 24,
+    "notebook_orchestration_tests_passed": 3
+  },
+  {
+    "notebook": "train_B02_resnext50_32x4d.ipynb",
+    "cells": 18,
+    "code_cells": 8,
+    "exp_id": "B02",
+    "backbone": "resnext50_32x4d",
+    "group": 2,
+    "schema": "passed",
+    "read_only_execution": "passed",
+    "real_model_training_started": false,
+    "sha256": "51da6d10ed567dc7b460a59d39cd198496a97de0842cf1851af182f750a64f30",
+    "submission_suite_tests_passed": 24,
+    "notebook_orchestration_tests_passed": 3
+  },
+  {
+    "notebook": "train_B03_convnext_tiny.ipynb",
+    "cells": 18,
+    "code_cells": 8,
+    "exp_id": "B03",
+    "backbone": "convnext_tiny",
+    "group": 1,
+    "schema": "passed",
+    "read_only_execution": "passed",
+    "real_model_training_started": false,
+    "sha256": "b65f90c527a2543159dd1eb47f5c18c53f3a711ff21ea1dff301f04cbed03447",
+    "submission_suite_tests_passed": 24,
+    "notebook_orchestration_tests_passed": 3
+  },
+  {
+    "notebook": "train_B04_deit_small_patch16_224.ipynb",
+    "cells": 18,
+    "code_cells": 8,
+    "exp_id": "B04",
+    "backbone": "deit_small_patch16_224",
+    "group": 1,
+    "schema": "passed",
+    "read_only_execution": "passed",
+    "real_model_training_started": false,
+    "sha256": "7cf225925a2e71e2e255bbc2855797c0817120f3bf105adc0d62a09dc93bc203",
+    "submission_suite_tests_passed": 24,
+    "notebook_orchestration_tests_passed": 3
+  },
+  {
+    "notebook": "train_B05_efficientnet_b0.ipynb",
+    "cells": 18,
+    "code_cells": 8,
+    "exp_id": "B05",
+    "backbone": "efficientnet_b0",
+    "group": 2,
+    "schema": "passed",
+    "read_only_execution": "passed",
+    "real_model_training_started": false,
+    "sha256": "867be571eb3ca86bff8e6456fc7c4402bde7e05a74248ccb1d29eb6165b42af6",
+    "submission_suite_tests_passed": 24,
+    "notebook_orchestration_tests_passed": 3
+  }
+]

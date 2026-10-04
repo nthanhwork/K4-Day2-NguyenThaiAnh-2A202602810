@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "notebook": "submissions/2A202602810_NguyenThaiAnh/code/notebooks/reproduce_colab.ipynb",
+  "code_cells_executed": 7,
+  "dependency_installation": "skipped only in test copy; packages already installed",
+  "mode": "REPRODUCE=False",
+  "training_performed": false,
+  "test_forward_performed": false,
+  "external_publication": "not performed"
+}
